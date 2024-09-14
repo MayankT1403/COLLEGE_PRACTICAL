@@ -12,7 +12,7 @@ const digit = "1234567890";
 const symbolnum = "!@#$%^&*()_+~`|}{[]:;<>?,./";
 
 function addPass() {
-    password.value = ""; // Clear previous password
+    password.value = ""; 
     let passwordCharacters = ""; 
 
     if (upper.checked) {
@@ -28,7 +28,7 @@ function addPass() {
         passwordCharacters += symbolnum;
     }
 
-    const passLength = parseInt(lengthInput.value); // Get dynamic length
+    const passLength = parseInt(lengthInput.value);
 
     if (passwordCharacters.length === 0) {
         password.value = "Please select at least one option!";
